@@ -1,5 +1,4 @@
 package com.duoc.proyecto.controller;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -15,6 +14,7 @@ import com.duoc.proyecto.service.PeliculaService;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import jakarta.validation.Valid;
 
 
 @RestController
@@ -37,7 +37,7 @@ public class PeliculaController {
   }
 
   @PostMapping
-  public Pelicula crearPelicula(@RequestBody Pelicula pelicula) {
+  public Pelicula crearPelicula(@Valid @RequestBody Pelicula pelicula) {
     return peliculaService.createPelicula(pelicula);
   }
   
