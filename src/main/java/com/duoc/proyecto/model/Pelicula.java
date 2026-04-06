@@ -39,7 +39,7 @@ public class Pelicula {
   private String sinopsis;
 
 
-  // Getters and setters
+  // Getters
   public Long getId() { return id;}
   public String getTitulo() { return titulo; }
   public Integer getAnio() { return anio; }
@@ -47,7 +47,7 @@ public class Pelicula {
   public String getGenero() { return genero;}
   public String getSinopsis() { return sinopsis;}
 
-  // --- SETTERS (ESTO ES LO QUE FALTA) ---
+  // Setters
   public void setId(Long id) { this.id = id; }
   public void setTitulo(String titulo) { this.titulo = titulo; }
   public void setAnio(Integer anio) { this.anio = anio; }

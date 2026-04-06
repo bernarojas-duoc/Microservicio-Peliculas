@@ -36,6 +36,7 @@ public class PeliculaController {
     return peliculaService.getPeliculaById(id);
   }
 
+  // Crear película
   @PostMapping
   public Pelicula crearPelicula(@Valid @RequestBody Pelicula pelicula) {
     return peliculaService.createPelicula(pelicula);
