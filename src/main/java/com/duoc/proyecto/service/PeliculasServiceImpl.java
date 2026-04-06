@@ -4,10 +4,12 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.duoc.proyecto.model.Pelicula;
 import com.duoc.proyecto.repository.PeliculaRepository;
 
+@Service
 public class PeliculasServiceImpl implements PeliculaService {
   @Autowired
   private PeliculaRepository peliculaRepository;
